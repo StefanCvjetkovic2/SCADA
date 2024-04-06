@@ -9,3 +9,9 @@ C:\Users\NewUser\Desktop\SCADA_2024\dCom\Common\obj\Debug\Common.csproj.Assembly
 C:\Users\NewUser\Desktop\SCADA_2024\dCom\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 C:\Users\NewUser\Desktop\SCADA_2024\dCom\Common\obj\Debug\Common.dll
 C:\Users\NewUser\Desktop\SCADA_2024\dCom\Common\obj\Debug\Common.pdb
+C:\Users\NewUser\Documents\GitHub\Scada\dCom\Common\bin\Debug\Common.dll
+C:\Users\NewUser\Documents\GitHub\Scada\dCom\Common\bin\Debug\Common.pdb
+C:\Users\NewUser\Documents\GitHub\Scada\dCom\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+C:\Users\NewUser\Documents\GitHub\Scada\dCom\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\NewUser\Documents\GitHub\Scada\dCom\Common\obj\Debug\Common.dll
+C:\Users\NewUser\Documents\GitHub\Scada\dCom\Common\obj\Debug\Common.pdb

@@ -7,3 +7,12 @@ C:\Users\NewUser\Desktop\SCADA_2024\dCom\Modbus\obj\Debug\Modbus.csproj.CoreComp
 C:\Users\NewUser\Desktop\SCADA_2024\dCom\Modbus\obj\Debug\Modbus.csproj.CopyComplete
 C:\Users\NewUser\Desktop\SCADA_2024\dCom\Modbus\obj\Debug\Modbus.dll
 C:\Users\NewUser\Desktop\SCADA_2024\dCom\Modbus\obj\Debug\Modbus.pdb
+C:\Users\NewUser\Documents\GitHub\Scada\dCom\Modbus\bin\Debug\Modbus.dll
+C:\Users\NewUser\Documents\GitHub\Scada\dCom\Modbus\bin\Debug\Modbus.pdb
+C:\Users\NewUser\Documents\GitHub\Scada\dCom\Modbus\bin\Debug\Common.dll
+C:\Users\NewUser\Documents\GitHub\Scada\dCom\Modbus\bin\Debug\Common.pdb
+C:\Users\NewUser\Documents\GitHub\Scada\dCom\Modbus\obj\Debug\Modbus.csproj.AssemblyReference.cache
+C:\Users\NewUser\Documents\GitHub\Scada\dCom\Modbus\obj\Debug\Modbus.csproj.CoreCompileInputs.cache
+C:\Users\NewUser\Documents\GitHub\Scada\dCom\Modbus\obj\Debug\Modbus.csproj.CopyComplete
+C:\Users\NewUser\Documents\GitHub\Scada\dCom\Modbus\obj\Debug\Modbus.dll
+C:\Users\NewUser\Documents\GitHub\Scada\dCom\Modbus\obj\Debug\Modbus.pdb
