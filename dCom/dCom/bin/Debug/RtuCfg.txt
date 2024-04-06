@@ -1,0 +1,7 @@
+STA 33
+TCP 64672
+
+IN_REG  2 2200  0  0   4095  2000  AI  @Senzor    4
+DO_REG  5 2600  0  0      1     0  DO  @Prekidac  2
+DI_REG  1 4300  0  0      1     0  DI  @KonSenzor 2
+
