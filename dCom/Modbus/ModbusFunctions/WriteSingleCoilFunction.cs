@@ -24,15 +24,36 @@ namespace Modbus.ModbusFunctions
         /// <inheritdoc />
         public override byte[] PackRequest()
         {
-            //TO DO: IMPLEMENT
-            throw new NotImplementedException();
+            byte[] PackReq = new byte[12];
+
+            PackReq[0] = BitConverter.GetBytes(CommandParameters.TransactionId)[1];
+            PackReq[1] = BitConverter.GetBytes(CommandParameters.TransactionId)[0];
+            PackReq[2] = BitConverter.GetBytes(CommandParameters.ProtocolId)[1];
+            PackReq[3] = BitConverter.GetBytes(CommandParameters.ProtocolId)[0];
+            PackReq[4] = BitConverter.GetBytes(CommandParameters.Length)[1];
+            PackReq[5] = BitConverter.GetBytes(CommandParameters.Length)[0];
+            PackReq[6] = CommandParameters.UnitId;
+            PackReq[7] = CommandParameters.FunctionCode;
+            PackReq[8] = BitConverter.GetBytes(((ModbusWriteCommandParameters)CommandParameters).OutputAddress)[1];
+            PackReq[9] = BitConverter.GetBytes(((ModbusWriteCommandParameters)CommandParameters).OutputAddress)[0];
+            PackReq[10] = BitConverter.GetBytes(((ModbusWriteCommandParameters)CommandParameters).Value)[1];
+            PackReq[11] = BitConverter.GetBytes(((ModbusWriteCommandParameters)CommandParameters).Value)[0];
+
+            return PackReq;
         }
 
         /// <inheritdoc />
         public override Dictionary<Tuple<PointType, ushort>, ushort> ParseResponse(byte[] response)
         {
-            //TO DO: IMPLEMENT
-            throw new NotImplementedException();
+            Dictionary<Tuple<PointType, ushort>, ushort> resp = new Dictionary<Tuple<PointType, ushort>, ushort>();
+
+            ushort outputAddress = (ushort)IPAddress.NetworkToHostOrder((short)BitConverter.ToUInt16(response, 8));
+            ushort value = (ushort)IPAddress.NetworkToHostOrder((short)BitConverter.ToUInt16(response, 10));
+
+            Tuple<PointType, ushort> tuple = new Tuple<PointType, ushort>(PointType.DIGITAL_OUTPUT, outputAddress);
+            resp.Add(tuple, value);
+
+            return resp;
         }
     }
 }
